@@ -4,10 +4,10 @@ import Footer from "../Footer";
 import HomePage from "../Homepage/HomePage";
 import { Routes, Route } from "react-router-dom";
 
-function HomeRoutes() {
+function HomeRoutes(props) {
   return (
     <>
-      <Navbar />
+      <Navbar  userStatus={props.userStatus} auth={props.auth}/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/abx" element={<HomePage />} />

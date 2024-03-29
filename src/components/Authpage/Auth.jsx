@@ -1,27 +1,23 @@
 import React, { useState } from "react";
-import "../../resources/css/Authpage/auth.css";
 import cozyImage from "../../resources/images/logo.png";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function Login(props) {
-  const [password, setPassword] = useState("");
+function Auth() {
+  const [email, setEmail] = useState("");
   const navigate = useNavigate();
-  const location = useLocation();
-  //   const urlParams = new URLSearchParams(window.location.search);
-  //   if (urlParams !== "") {
-  //     setAuth(urlParams.get("auth"));
-  //   } else {
-  //     setAuth(false);
-  //   }
+
+  function validator() {
+    
+  }
 
   function submitHandler(e) {
     e.preventDefault();
-    fetch("http://localhost:5000/api/auth/login", {
+    fetch("http://localhost:5000/api/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email: location.state.email, password: password }),
+      body: JSON.stringify({ email: email }),
     })
       .then((response) => {
         return response.json();
@@ -29,11 +25,9 @@ function Login(props) {
       .then((data) => {
         console.log(data);
         if (data.statusCode === "200") {
-          props.auth();
-          navigate("/");
+          navigate("/auth/login", { state: { email: email } });
         } else {
-          setPassword("");
-          alert("Password incorrect");
+          navigate("/auth/register", { state: { email: email } });
         }
       });
   }
@@ -53,27 +47,14 @@ function Login(props) {
               htmlFor="email"
               style={{ fontSize: "12px", fontWeight: "600" }}
             >
-              Email
+              Email Address
             </label>
             <input
               type="email"
               name="email"
               className="form-input-field"
-              value={location.state.email}
-              disabled
-            />
-            <label
-              htmlFor="password"
-              style={{ fontSize: "12px", fontWeight: "600" }}
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              name="password"
-              className="form-input-field"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button type="submit" className="form-submit-btn">
               Continue
@@ -91,4 +72,4 @@ function Login(props) {
   );
 }
 
-export default Login;
+export default Auth;

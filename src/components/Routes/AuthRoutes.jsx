@@ -1,15 +1,17 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Auth from "../Authpage/Auth";
 import Login from "../Authpage/Login";
 import Register from "../Authpage/Register";
 
-function AuthRoutes() {
+function AuthRoutes({authLogin}) { 
+  console.log(authLogin)
   return (
     <>
       <Routes>
-        <Route index element={<Login />}></Route>
-        <Route path="/login" element={<Login />} ></Route>
-        <Route path="/register" element={<Register />} ></Route>
+        <Route index element={<Auth />}></Route>
+        <Route path="/login" element={<Login auth={authLogin}/>}></Route>
+        <Route path="/register" element={<Register auth={authLogin}/>}></Route>
       </Routes>
     </>
   );

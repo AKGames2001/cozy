@@ -3,10 +3,15 @@ import { GrSearch } from "react-icons/gr";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import { LuLogIn } from "react-icons/lu";
+import { LuLogOut } from "react-icons/lu";
 import LogoImg from "../resources/images/logo.png";
 import "../resources/css/navbar.css";
+import { useNavigate } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
+  const naviagte = useNavigate();
+  console.log("user",props.userStatus);
   return (
     <>
       <div className="nav-bar">
@@ -17,10 +22,39 @@ function Navbar() {
               <GrSearch />
               <p>Search</p>
             </div>
-            <div className="nav-icon">
-              <CgProfile />
-              <p>Profile</p>
-            </div>
+            {props.userStatus ? (
+              <>
+                <div className="nav-icon">
+                  <CgProfile />
+                  <p>Profile</p>
+                </div>
+                <div
+                  className="nav-icon"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    props.auth(false);
+                    naviagte("/");
+                  }}
+                >
+                  <LuLogOut />
+                  <p>Logout</p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div
+                  className="nav-icon"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    naviagte("/auth");
+                  }}
+                >
+                  <LuLogIn />
+                  <p>Login</p>
+                </div>
+              </>
+            )}
+
             <div className="nav-icon">
               <MdOutlineShoppingCart />
               <p>Cart</p>
