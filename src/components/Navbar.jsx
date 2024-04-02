@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 function Navbar(props) {
   const naviagte = useNavigate();
-  console.log("user",props.userStatus);
+  console.log("user", props.userStatus);
   return (
     <>
       <div className="nav-bar">
@@ -55,7 +55,13 @@ function Navbar(props) {
               </>
             )}
 
-            <div className="nav-icon">
+            <div
+              className="nav-icon"
+              onClick={(e) => {
+                e.preventDefault();
+                props.userStatus ? naviagte("/transaction/cart") : naviagte("/auth");
+              }}
+            >
               <MdOutlineShoppingCart />
               <p>Cart</p>
             </div>

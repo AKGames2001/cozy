@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from "react";
 import "../../resources/css/Homepage/featured.css";
-import Featured_1 from "../../resources/images/bottle.png";
+// import Featured_1 from "../../resources/images/bottle.png";
+import { useNavigate } from "react-router-dom";
 
 function Featured() {
   const [apiData, setApiData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate();
+
+  function redirectHandler(e) {
+    e.preventDefault();
+    console.log(e.target.parentNode.id);
+    navigate("/product/custom", {state: {id: e.target.parentNode.id}})
+  }
 
   function mapper() {
     return apiData.map((element) => {
-      console.log(element)
       return (
-        <div className="featured-product" key={element.id}>
+        <div className="featured-product" key={element.id} onClick={redirectHandler} id={element.id}>
           <img src={"images/" + element.image} alt="/" />
           <div className="featured-product-info">
             <p style={{ fontWeight: "700" }}>{element.title}</p>

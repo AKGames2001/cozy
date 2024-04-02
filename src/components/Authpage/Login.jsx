@@ -2,17 +2,12 @@ import React, { useState } from "react";
 import "../../resources/css/Authpage/auth.css";
 import cozyImage from "../../resources/images/logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
+import { TiTick } from "react-icons/ti";
 
 function Login(props) {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
-  //   const urlParams = new URLSearchParams(window.location.search);
-  //   if (urlParams !== "") {
-  //     setAuth(urlParams.get("auth"));
-  //   } else {
-  //     setAuth(false);
-  //   }
 
   function submitHandler(e) {
     e.preventDefault();
@@ -29,7 +24,7 @@ function Login(props) {
       .then((data) => {
         console.log(data);
         if (data.statusCode === "200") {
-          props.auth();
+          props.auth(location.state.email);
           navigate("/");
         } else {
           setPassword("");
@@ -38,14 +33,19 @@ function Login(props) {
       });
   }
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <div className="auth">
       <div className="auth-header">
         <img src={cozyImage} alt="/" />
         <div className="auth-title">
-          <h3>Sign in or create your account</h3>
-          <p>Not sure if you have an account?</p>
-          <p>Enter your email and we’ll check for you</p>
+          <h3>
+            Welcome Back! {capitalizeFirstLetter(location.state.username)}
+          </h3>
+          <p>Login to your account to enjoy our service</p>
         </div>
         <div className="auth-form">
           <form method="post" onSubmit={submitHandler}>
@@ -79,6 +79,22 @@ function Login(props) {
               Continue
             </button>
           </form>
+          <div className="password-checker">
+            <div className="password-checker-bg">
+              <div className="password-checker-item">
+                <TiTick />
+                <p>Min. 8 Characters</p>
+              </div>
+              <div className="password-checker-item">
+                <TiTick />
+                <p>Contains alphabets & numbers</p>
+              </div>
+              <div className="password-checker-item">
+                <TiTick />
+                <p>Contains special character</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="auth-info">
           <p>

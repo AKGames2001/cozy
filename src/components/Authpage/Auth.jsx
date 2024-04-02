@@ -6,9 +6,9 @@ function Auth() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
-  function validator() {
+  // function validator() {
     
-  }
+  // }
 
   function submitHandler(e) {
     e.preventDefault();
@@ -25,7 +25,7 @@ function Auth() {
       .then((data) => {
         console.log(data);
         if (data.statusCode === "200") {
-          navigate("/auth/login", { state: { email: email } });
+          navigate("/auth/login", { state: { email: email, username: data.username } });
         } else {
           navigate("/auth/register", { state: { email: email } });
         }

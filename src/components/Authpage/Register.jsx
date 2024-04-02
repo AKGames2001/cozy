@@ -27,7 +27,7 @@ function Register(props) {
       .then((data) => {
         console.log(data);
         if (data.statusCode === "200") {
-          props.auth();
+          props.auth(location.state.email);
           navigate("/");
         } else {
           setPassword("");
