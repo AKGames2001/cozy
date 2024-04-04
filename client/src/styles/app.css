@@ -1,0 +1,43 @@
+:root {
+  --background-color: #ffffff;
+  --base-color: #f9e4d4;
+  --btn-color: #6B240C;
+  --text-color-dark: #000000;
+  --text-color-light: #ffffff;
+  --hover-effect-color: #53ac00;
+}
+
+body,
+p,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+Link,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Buda", serif;
+  font-weight: bolder;
+}
+
+body, p, a {
+  font-family: "Lora", serif;
+  font-weight: 400;
+}
+
+body {
+  overflow-x: hidden;
+}

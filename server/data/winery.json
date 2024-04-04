@@ -1,0 +1,1392 @@
+{
+  "wines": [
+    {
+      "id": "be05c240-506d-4413-b93b-63a06d73f1da",
+      "title": "2021 Brut Rosé",
+      "subTitle": null,
+      "image": "2021-brut-rose.png",
+      "type": "Wine",
+      "departmentId": null,
+      "vendorId": null,
+      "teaser": null,
+      "content": "<p style=\"margin-top: 0in; vertical-align: baseline;\"><sup><span style=\"font-family: 'Segoe UI', sans-serif; color: #3c3c3c; letter-spacing: 0.4pt;\">Demand was so great for the 2020 Brut Ros&eacute; we decided to do it all over again. This 2021 Brut Ros&eacute; sparkler will delight the senses. Made from two of our Pinot Noir clones and fermented in stainless steel and neutral oak for freshness &amp; vitality. The subtle tropical strawberry notes pair wonderfully with spicy food.</span></sup></p>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2021-brut-rose",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2022-08-16T01:03:47.395Z",
+      "updatedAt": "2023-10-30T19:21:10.453Z",
+      "images": [
+        {
+          "id": "f0f1b0d6-8cfe-4dfb-ae87-e40604606e1a",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2021-brut-rose-1660703053271.png",
+          "original": null,
+          "formats": null,
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "033cf1c3-3f6b-4570-9fcd-a46c311dc1be",
+          "title": "750ml",
+          "sku": "2021-ROSE-BUBBLES",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 3800,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 3,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": 2,
+              "productVariantId": "033cf1c3-3f6b-4570-9fcd-a46c311dc1be",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 575
+            }
+          ],
+          "addToCartPrice": 3800
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2021 Brut Rosé",
+        "description": "Demand was so great for the 2020 Brut Ros&eacute; we decided to do it all over again. This 2021 Brut Ros&eacute; sparkler will delight the senses. Made from..."
+      },
+      "wine": {
+        "type": "Sparkling",
+        "varietal": "Sparkling",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Laurelwood District",
+        "vintage": 2021
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "ee8be1ad-5330-4c44-9181-25408bd723ad",
+      "title": "2022 Brut Rose",
+      "subTitle": null,
+      "image": "2022-benza-brut-rose.jpg",
+      "type": "Wine",
+      "departmentId": null,
+      "vendorId": null,
+      "teaser": null,
+      "content": null,
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2022-brut-rose",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2023-05-19T19:12:41.796Z",
+      "updatedAt": "2023-10-30T19:20:12.879Z",
+      "images": [
+        {
+          "id": "ffab4024-43be-4917-a4ba-31fb5634f1d2",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-brut-rose-1685128823479.jpg",
+          "original": {
+            "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-brut-rose-1685128823479.jpg",
+            "width": 1800,
+            "height": 2400
+          },
+          "formats": {
+            "large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-brut-rose-1685128823479.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-brut-rose-1685128823479.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-brut-rose-1685128823479.webp",
+              "width": 750,
+              "height": 1000
+            },
+            "small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-brut-rose-1685128823479.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-brut-rose-1685128823479.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-brut-rose-1685128823479.webp",
+              "width": 150,
+              "height": 200
+            },
+            "medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-brut-rose-1685128823479.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-brut-rose-1685128823479.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-brut-rose-1685128823479.webp",
+              "width": 450,
+              "height": 600
+            },
+            "x-large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-brut-rose-1685128823479.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-brut-rose-1685128823479.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-brut-rose-1685128823479.webp",
+              "width": 1536,
+              "height": 2048
+            },
+            "admin-small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-brut-rose-1685128823479.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-brut-rose-1685128823479.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-brut-rose-1685128823479.webp",
+              "width": 128,
+              "height": 128
+            },
+            "admin-medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-brut-rose-1685128823479.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-brut-rose-1685128823479.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-brut-rose-1685128823479.webp",
+              "width": 350,
+              "height": 350
+            }
+          },
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "753b819c-a68b-4388-851f-61ee2441c876",
+          "title": "750ml",
+          "sku": "2022-Brut-Rose",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 3800,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 1,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": 0,
+              "productVariantId": "753b819c-a68b-4388-851f-61ee2441c876",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 491
+            }
+          ],
+          "addToCartPrice": 3800
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2022 Brut Rose",
+        "description": null
+      },
+      "wine": {
+        "type": "Sparkling",
+        "varietal": "Sparkling",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Laurelwood District",
+        "vintage": 2022
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "2d4c8106-9a34-4342-9ecc-3d609cda3e83",
+      "title": "2022 Block 2 Reserve Pinot Gris",
+      "subTitle": null,
+      "image": "benza-block-2-reserve-pinot-gris.jpg",
+      "type": "Wine",
+      "departmentId": "66a53b52-697f-4a20-9f17-5d456b8ead2c",
+      "vendorId": null,
+      "teaser": null,
+      "content": "<p><strong>Aromatics:</strong><br /><span style=\"font-family: playfair display, georgia, times new roman, serif;\">Asian pear, with white peaches, slight vanilla bean, flint, and&nbsp;minerals wrapping around the fruit.&nbsp;</span><br /><br /><strong>Palate:</strong><br /><span style=\"font-family: playfair display, georgia, times new roman, serif;\">Salinity and pineapple rind, with good tension and fresh acid.&nbsp;Soft caramel, key-lime and brioche on the finish.&nbsp;</span></p>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2022-block-2-reserve-pinot-gris",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2023-10-30T19:25:28.662Z",
+      "updatedAt": "2023-11-05T23:15:58.463Z",
+      "images": [
+        {
+          "id": "7f7388c0-6c5e-4657-a6a3-17b543c362b0",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+          "original": {
+            "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+            "width": 1800,
+            "height": 2400
+          },
+          "formats": {
+            "large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/large/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/large/benza-block-2-reserve-pinot-gris-1698693886839.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/large/benza-block-2-reserve-pinot-gris-1698693886839.webp",
+              "width": 750,
+              "height": 1000
+            },
+            "small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/small/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/small/benza-block-2-reserve-pinot-gris-1698693886839.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/small/benza-block-2-reserve-pinot-gris-1698693886839.webp",
+              "width": 150,
+              "height": 200
+            },
+            "medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/medium/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/medium/benza-block-2-reserve-pinot-gris-1698693886839.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/medium/benza-block-2-reserve-pinot-gris-1698693886839.webp",
+              "width": 450,
+              "height": 600
+            },
+            "x-large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/benza-block-2-reserve-pinot-gris-1698693886839.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/benza-block-2-reserve-pinot-gris-1698693886839.webp",
+              "width": 1536,
+              "height": 2048
+            },
+            "admin-small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/benza-block-2-reserve-pinot-gris-1698693886839.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/benza-block-2-reserve-pinot-gris-1698693886839.webp",
+              "width": 128,
+              "height": 128
+            },
+            "admin-medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/benza-block-2-reserve-pinot-gris-1698693886839.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/benza-block-2-reserve-pinot-gris-1698693886839.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/benza-block-2-reserve-pinot-gris-1698693886839.webp",
+              "width": 350,
+              "height": 350
+            }
+          },
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "200ccb5e-259d-4095-90d3-202d445d7fbd",
+          "title": "750ml",
+          "sku": "2022-BLOCK-2",
+          "upcCode": null,
+          "volumeInML": 724,
+          "price": 4000,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": false,
+          "inventoryPolicy": "Back Order",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 23,
+          "inventory": null,
+          "addToCartPrice": 4000
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2022 Block 2 Reserve Pinot Gris",
+        "description": "Aromatics:Asian pear, with white peaches, slight vanilla bean, flint, and minerals wrapping around the fruit. Palate:Salinity and pineapple rind, with good..."
+      },
+      "wine": {
+        "type": "White",
+        "varietal": "Pinot Gris",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Laurelwood District",
+        "vintage": 2022
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "2446b29c-3251-4698-bc9b-c8552fdde11d",
+      "title": "2022 Estate Pinot Gris",
+      "subTitle": null,
+      "image": "2022-benza-pinot-gris.jpg",
+      "type": "Wine",
+      "departmentId": null,
+      "vendorId": null,
+      "teaser": null,
+      "content": null,
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2022-estate-pinot-gris",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2023-05-19T19:11:27.841Z",
+      "updatedAt": "2023-10-30T19:20:26.774Z",
+      "images": [
+        {
+          "id": "cd8a9902-a147-4510-ab56-c07e037b0a03",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-pinot-gris-1684523450644.jpg",
+          "original": {
+            "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-pinot-gris-1684523450644.jpg",
+            "width": 1800,
+            "height": 2400
+          },
+          "formats": {
+            "large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-pinot-gris-1684523450644.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-pinot-gris-1684523450644.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-pinot-gris-1684523450644.webp",
+              "width": 750,
+              "height": 1000
+            },
+            "small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-pinot-gris-1684523450644.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-pinot-gris-1684523450644.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-pinot-gris-1684523450644.webp",
+              "width": 150,
+              "height": 200
+            },
+            "medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-pinot-gris-1684523450644.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-pinot-gris-1684523450644.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-pinot-gris-1684523450644.webp",
+              "width": 450,
+              "height": 600
+            },
+            "x-large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-pinot-gris-1684523450644.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-pinot-gris-1684523450644.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-pinot-gris-1684523450644.webp",
+              "width": 1536,
+              "height": 2048
+            },
+            "admin-small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-pinot-gris-1684523450644.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-pinot-gris-1684523450644.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-pinot-gris-1684523450644.webp",
+              "width": 128,
+              "height": 128
+            },
+            "admin-medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-pinot-gris-1684523450644.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-pinot-gris-1684523450644.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-pinot-gris-1684523450644.webp",
+              "width": 350,
+              "height": 350
+            }
+          },
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "c36c9f99-6c97-480d-b75d-2f09a00d017a",
+          "title": "750ml",
+          "sku": "2022-Pinot-Gris",
+          "upcCode": null,
+          "volumeInML": 739,
+          "price": 2900,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 1,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": 7,
+              "productVariantId": "c36c9f99-6c97-480d-b75d-2f09a00d017a",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 746
+            }
+          ],
+          "addToCartPrice": 2900
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2022 Estate Pinot Gris",
+        "description": null
+      },
+      "wine": {
+        "type": "White",
+        "varietal": "Pinot Gris",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Laurelwood District",
+        "vintage": 2022
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "db469185-eaaa-46b9-85c9-4d2570e0331f",
+      "title": "2021 Touch of Gold Chardonnay",
+      "subTitle": "Chardonnay",
+      "image": "chardonnay-2021.png",
+      "type": "Wine",
+      "departmentId": null,
+      "vendorId": null,
+      "teaser": null,
+      "content": "<p>Named after our horse palomino-coated Missouri Foxtrotter, Touch, whose official name is <em>Lucky Touch of Gold. </em>This estate Chardonnay was made from several of our estate Chardonnay clones. Barrel fermented with minimal stirring. This a textural wine reflecting the ripe characteristics of the vintage restrained by an early pick in order to maintain balance and acidity. Again a wine that can be enjoyed now but will improve with age.&nbsp;</p>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2021-touch-of-gold-chardonnay",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2023-03-10T20:45:37.003Z",
+      "updatedAt": "2023-10-30T19:22:05.598Z",
+      "images": [
+        {
+          "id": "43e4eee4-d6ec-4dc0-b92e-ccfd737a332f",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/chardonnay-2021-1678481093889.png",
+          "original": {
+            "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/chardonnay-2021-1678481093889.png",
+            "width": 1800,
+            "height": 2400
+          },
+          "formats": {
+            "large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/large/chardonnay-2021-1678481093889.png",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/large/chardonnay-2021-1678481093889.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/large/chardonnay-2021-1678481093889.webp",
+              "width": 750,
+              "height": 1000
+            },
+            "small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/small/chardonnay-2021-1678481093889.png",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/small/chardonnay-2021-1678481093889.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/small/chardonnay-2021-1678481093889.webp",
+              "width": 150,
+              "height": 200
+            },
+            "medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/medium/chardonnay-2021-1678481093889.png",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/medium/chardonnay-2021-1678481093889.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/medium/chardonnay-2021-1678481093889.webp",
+              "width": 450,
+              "height": 600
+            },
+            "x-large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/chardonnay-2021-1678481093889.png",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/chardonnay-2021-1678481093889.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/chardonnay-2021-1678481093889.webp",
+              "width": 1536,
+              "height": 2048
+            },
+            "admin-small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/chardonnay-2021-1678481093889.png",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/chardonnay-2021-1678481093889.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/chardonnay-2021-1678481093889.webp",
+              "width": 128,
+              "height": 128
+            },
+            "admin-medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/chardonnay-2021-1678481093889.png",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/chardonnay-2021-1678481093889.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/chardonnay-2021-1678481093889.webp",
+              "width": 350,
+              "height": 350
+            }
+          },
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "205c6a79-7e66-4377-8270-645f8a52a690",
+          "title": "750ml",
+          "sku": "2021-TOUCH-CHARD",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 4200,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 1,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": -2,
+              "productVariantId": "205c6a79-7e66-4377-8270-645f8a52a690",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 993
+            }
+          ],
+          "addToCartPrice": 4200
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2021 Touch of Gold Chardonnay",
+        "description": "Named after our horse palomino-coated Missouri Foxtrotter, Touch, whose official name is Lucky Touch of Gold. This estate Chardonnay was made from several of..."
+      },
+      "wine": {
+        "type": "White",
+        "varietal": "Chardonnay",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Laurelwood District",
+        "vintage": 2021
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "5688d972-9534-4bc8-b730-1ed533945bb8",
+      "title": "2022 Estate Rosé of Pinot Noir",
+      "subTitle": null,
+      "image": "2022-benza-ros-of-pinot-noir.jpg",
+      "type": "Wine",
+      "departmentId": null,
+      "vendorId": null,
+      "teaser": null,
+      "content": null,
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2022-estate-ros-of-pinot-noir",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2023-05-05T22:25:49.898Z",
+      "updatedAt": "2023-10-30T19:20:40.835Z",
+      "images": [
+        {
+          "id": "deb7a925-0f87-47ef-9dfc-ccdfe2b9d94b",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+          "original": {
+            "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+            "width": 1800,
+            "height": 2400
+          },
+          "formats": {
+            "large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-ros-of-pinot-noir-1684523327851.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-ros-of-pinot-noir-1684523327851.webp",
+              "width": 750,
+              "height": 1000
+            },
+            "small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-ros-of-pinot-noir-1684523327851.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-ros-of-pinot-noir-1684523327851.webp",
+              "width": 150,
+              "height": 200
+            },
+            "medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-ros-of-pinot-noir-1684523327851.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-ros-of-pinot-noir-1684523327851.webp",
+              "width": 450,
+              "height": 600
+            },
+            "x-large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-ros-of-pinot-noir-1684523327851.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-ros-of-pinot-noir-1684523327851.webp",
+              "width": 1536,
+              "height": 2048
+            },
+            "admin-small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-ros-of-pinot-noir-1684523327851.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-ros-of-pinot-noir-1684523327851.webp",
+              "width": 128,
+              "height": 128
+            },
+            "admin-medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-ros-of-pinot-noir-1684523327851.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-ros-of-pinot-noir-1684523327851.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-ros-of-pinot-noir-1684523327851.webp",
+              "width": 350,
+              "height": 350
+            }
+          },
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "4e420018-5adf-4dfb-b8cf-05b9c463178a",
+          "title": "750ml",
+          "sku": "2022-ESTATE-ROSE",
+          "upcCode": null,
+          "volumeInML": 760,
+          "price": 2900,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 1,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": -1,
+              "productVariantId": "4e420018-5adf-4dfb-b8cf-05b9c463178a",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 1043
+            }
+          ],
+          "addToCartPrice": 2900
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2022 Estate Rosé of Pinot Noir",
+        "description": null
+      },
+      "wine": {
+        "type": "Rose",
+        "varietal": "Rose",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Laurelwood District",
+        "vintage": 2022
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "8bc324a1-0b5b-4f03-87cd-9628b2ddab01",
+      "title": "2018 Estate Pinot Noir",
+      "subTitle": null,
+      "image": "estate.jpg",
+      "type": "Wine",
+      "departmentId": "66a53b52-697f-4a20-9f17-5d456b8ead2c",
+      "vendorId": null,
+      "teaser": null,
+      "content": "<p>Picked from various estate blocks, this wine is a reflection of its place of origin in 2018. The warm and very dry growing season led to wines of intensity. The wine was in barrel for 10 months comprised of 15% new French oak.</p>\n<p>A bit more on the red spectrum, this wine still shows the darker characteristics of the vintage with dark red fruits under-girded by earthy and spicy notes. The intensity of the vintage is on display with good amounts of tannin and acid. The wine will age beautifully and has the guts to age for many years.</p>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2018-estate-pinot-noir",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2020-06-12T17:41:15.444Z",
+      "updatedAt": "2023-11-02T23:28:36.294Z",
+      "images": [
+        {
+          "id": "dc7a4fba-be03-4dbe-880a-089ede03e105",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/estate-1613967487583.jpg",
+          "original": null,
+          "formats": null,
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "6ebf62dc-dab0-4add-a2e2-40b4b6c09ae3",
+          "title": "750ml",
+          "sku": "2018-ESTATE-PINOT",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 5400,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 3,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": 8,
+              "productVariantId": "6ebf62dc-dab0-4add-a2e2-40b4b6c09ae3",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 2786
+            }
+          ],
+          "addToCartPrice": 5400
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2018 Estate Pinot Noir",
+        "description": "Picked from various estate blocks, this wine is a reflection of its place of origin in 2018."
+      },
+      "wine": {
+        "type": "Red",
+        "varietal": "Pinot Noir",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Willamette Valley",
+        "vintage": 2018
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "c6619b14-55bd-49e4-aa4a-78171d9548e2",
+      "title": "2019 Estate Pinot Noir",
+      "subTitle": "",
+      "image": "2019-estate-pinot-noir.jpg",
+      "type": "Wine",
+      "departmentId": "66a53b52-697f-4a20-9f17-5d456b8ead2c",
+      "vendorId": null,
+      "teaser": "",
+      "content": "<p>A blend of our 5 estate Pinot Clones. In barrel for 10 months comprised of 56% new French oak. Dark red (and blue) fruit with earth and spice notes. A faithful representation of our property.</p>\n<div><em>94 Points&nbsp;<a href=\"http://jamessuckling.com/\" target=\"_blank\" rel=\"noopener\" data-saferedirecturl=\"https://www.google.com/url?q=http://JamesSuckling.com&amp;source=gmail&amp;ust=1651172681497000&amp;usg=AOvVaw3B_crYY3ou-bQxrGCQXivm\">JamesSuckling.com</a>: A</em>&nbsp;fuller-bodied pinot for a 2019 with ripe and juicy fruit in the center palate, enveloped with blue fruit and hibiscus flowers. Chewy and tannic at the end. It will age nicely&rdquo;</div>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2019-estate-pinot-noir",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2022-02-25T18:03:20.616Z",
+      "updatedAt": "2022-05-05T23:08:02.663Z",
+      "images": [
+        {
+          "id": "68352ed8-2e3d-49ca-9d86-45a41cf53229",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2019-estate-pinot-noir-1645812451467.jpg",
+          "original": null,
+          "formats": null,
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "9677f3be-ae16-4355-8c7e-786889ca5ab4",
+          "title": "750ml",
+          "sku": "2019-ESTATE-PINOT",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 5600,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 3,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": -5,
+              "productVariantId": "9677f3be-ae16-4355-8c7e-786889ca5ab4",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 2419
+            }
+          ],
+          "addToCartPrice": 5600
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2019 Estate Pinot Noir",
+        "description": "A blend of our 5 estate Pinot Clones. In barrel for 10 months comprised of 56% new French oak. Dark red (and blue) fruit with earth and spice notes. A..."
+      },
+      "wine": {
+        "type": "Red",
+        "varietal": "Pinot Noir",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Willamette Valley",
+        "vintage": 2019
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "bfa9de50-3517-4a38-b373-fde8d368a6bc",
+      "title": "2019 Three Tuxedos Reserve Pinot Noir",
+      "subTitle": "",
+      "image": "2019-reserve-pinot-noir.jpg",
+      "type": "Wine",
+      "departmentId": "66a53b52-697f-4a20-9f17-5d456b8ead2c",
+      "vendorId": null,
+      "teaser": "",
+      "content": "<p>Lovingly named after our three tuxedo cats&mdash;from whence our bow-tie logo and notched label also derives, this selection comprises the best barrels of the vintage with 45% new french oak.</p>\n<p>The 2019 vintage produced dense wines in the red to black fruit&nbsp;spectrum with an&nbsp;earthiness enhanced by the savory characteristics of our Laurelwood soil.&nbsp;This wine will only get better in time.</p>\n<div><em>94 Points&nbsp;<a href=\"http://jamessuckling.com/\" target=\"_blank\" rel=\"noopener\" data-saferedirecturl=\"https://www.google.com/url?q=http://JamesSuckling.com&amp;source=gmail&amp;ust=1651172681497000&amp;usg=AOvVaw3B_crYY3ou-bQxrGCQXivm\">JamesSuckling.com</a>:&nbsp;</em>Strawberry and floral aromas with some stems, following through to a full body with firm and tight tannins and a fresh, vivid finish. Bright and so pretty and nicely structured</div>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2019-three-tuxedos",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2022-02-25T18:06:46.466Z",
+      "updatedAt": "2022-05-05T23:09:37.506Z",
+      "images": [
+        {
+          "id": "b910685a-a940-430f-8e77-7a72930727c3",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2019-reserve-pinot-noir-1645840026938.jpg",
+          "original": null,
+          "formats": null,
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "eca79884-93c6-4462-b83b-b997db59c7f5",
+          "title": "750ml",
+          "sku": "2019-THREE-TUXEDOS",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 7000,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 3,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": -6,
+              "productVariantId": "eca79884-93c6-4462-b83b-b997db59c7f5",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 718
+            }
+          ],
+          "addToCartPrice": 7000
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2019 Three Tuxedos Reserve Pinot Noir",
+        "description": "Lovingly named after our three tuxedo cats&mdash;from whence our bow-tie logo and notched label also derives, this selection comprises the best barrels of..."
+      },
+      "wine": {
+        "type": "Red",
+        "varietal": "Pinot Noir",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Willamette Valley",
+        "vintage": 2019
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "0c57236a-8d58-4d95-a603-24139975ac55",
+      "title": "2019 Symphony Pinot Noir",
+      "subTitle": "",
+      "image": "19-symphony.jpg",
+      "type": "Wine",
+      "departmentId": "66a53b52-697f-4a20-9f17-5d456b8ead2c",
+      "vendorId": null,
+      "teaser": "",
+      "content": "<p>Designed as an all-star wine of the Willamette Valley. Sourced from three prized vineyards in three nested AVA&rsquo;s of the WV: Chehalem Mountains, Yamhill-Carlton and McMinnville. 60% Pommard brings an incredible nose to this 2019 but already delicious wine. Like adding instruments for a richer orchestra sound, this wine brings together a symphony of flavors deserving of its name</p>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2019-symphony",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2021-09-20T02:52:01.358Z",
+      "updatedAt": "2022-05-05T23:10:39.323Z",
+      "images": [
+        {
+          "id": "56551237-650c-4886-9b8b-af604482bc24",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/19-symphony-1632106375355.jpg",
+          "original": null,
+          "formats": null,
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "1c951950-2a58-4703-a3fe-f47de71997a3",
+          "title": "750ml",
+          "sku": "2019-SYMPHONY",
+          "upcCode": null,
+          "volumeInML": 750,
+          "price": 4400,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": true,
+          "inventoryPolicy": "Dont Sell",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 3,
+          "inventory": [
+            {
+              "reserveCount": 0,
+              "allocatedCount": -1,
+              "productVariantId": "1c951950-2a58-4703-a3fe-f47de71997a3",
+              "inventoryLocationId": "89994f11-3873-4e0e-8bab-5dc0958e4595",
+              "availableForSaleCount": 1439
+            }
+          ],
+          "addToCartPrice": 4400
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2019 Symphony Pinot Noir",
+        "description": "Designed as an all-star wine of the Willamette Valley. Sourced from three prized vineyards in three nested AVA&rsquo;s of the WV: Chehalem Mountains,..."
+      },
+      "wine": {
+        "type": "Red",
+        "varietal": "Pinot Noir",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "Willamette Valley",
+        "vintage": 2019
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    },
+    {
+      "id": "10838732-a188-43d7-9655-83c0fb5e3c92",
+      "title": "2022 Syrah",
+      "subTitle": null,
+      "image": "2022-benza-syrah.jpg",
+      "type": "Wine",
+      "departmentId": "66a53b52-697f-4a20-9f17-5d456b8ead2c",
+      "vendorId": null,
+      "teaser": null,
+      "content": "<p><strong>Aromatics:</strong><br />Dark Chocolate Mocha with savory umami and blueberry compote. And of course the Rocks &ldquo;Funk&rdquo;.<br /><br /><strong>Palate:</strong><br />Charred dark fruits, rich with density, and fresh acidity pulling the feather like tannins across the palate. Baking spices, bay leaf, and grilled red meat linger on the palate with warmth and grip.&nbsp;</p>",
+      "webStatus": "Available",
+      "adminStatus": "Available",
+      "slug": "2022-syrah-",
+      "metaData": null,
+      "appData": null,
+      "appSync": null,
+      "productTemplateId": null,
+      "createdAt": "2023-09-28T21:29:57.368Z",
+      "updatedAt": "2023-11-05T23:15:44.446Z",
+      "images": [
+        {
+          "id": "9362ba22-a63b-4ee0-b0b8-53101e2845db",
+          "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-syrah-1698693745218.jpg",
+          "original": {
+            "src": "https://images.commerce7.com/benza-vineyards-llc/images/original/2022-benza-syrah-1698693745218.jpg",
+            "width": 1800,
+            "height": 2400
+          },
+          "formats": {
+            "large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-syrah-1698693745218.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-syrah-1698693745218.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/large/2022-benza-syrah-1698693745218.webp",
+              "width": 750,
+              "height": 1000
+            },
+            "small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-syrah-1698693745218.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-syrah-1698693745218.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/small/2022-benza-syrah-1698693745218.webp",
+              "width": 150,
+              "height": 200
+            },
+            "medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-syrah-1698693745218.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-syrah-1698693745218.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/medium/2022-benza-syrah-1698693745218.webp",
+              "width": 450,
+              "height": 600
+            },
+            "x-large": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-syrah-1698693745218.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-syrah-1698693745218.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/x-large/2022-benza-syrah-1698693745218.webp",
+              "width": 1536,
+              "height": 2048
+            },
+            "admin-small": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-syrah-1698693745218.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-syrah-1698693745218.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-small/2022-benza-syrah-1698693745218.webp",
+              "width": 128,
+              "height": 128
+            },
+            "admin-medium": {
+              "src": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-syrah-1698693745218.jpg",
+              "avif": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-syrah-1698693745218.avif",
+              "webp": "https://images.commerce7.com/benza-vineyards-llc/images/admin-medium/2022-benza-syrah-1698693745218.webp",
+              "width": 350,
+              "height": 350
+            }
+          },
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "6decb005-d683-4bdb-afd0-d80844b153c9",
+          "title": "750ml",
+          "sku": "2022-SYRAH",
+          "upcCode": null,
+          "volumeInML": 751,
+          "price": 6400,
+          "comparePrice": null,
+          "bottleDeposit": 0,
+          "maxQuantityPerCart": null,
+          "sortOrder": 1,
+          "hasInventory": false,
+          "inventoryPolicy": "Back Order",
+          "hasShipping": true,
+          "taxType": "Wine",
+          "weight": 3,
+          "inventory": null,
+          "addToCartPrice": 6400
+        }
+      ],
+      "bundleItems": [],
+      "collections": [
+        {
+          "id": "fbb28518-2711-4c03-a9b4-0bfafb05901a",
+          "title": "Wine",
+          "content": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam cupiditate error officiis at harum atque. Ducimus in quia sed impedit perspiciatis dicta dolores culpa odio.\n \rDolorem sit voluptatem non nobis qui quidem ipsa id. Sed officiis quam maxime magnam ut. Omnis quibusdam cupiditate quia sed placeat omnis enim. Eaque debitis dolorum eligendi repudiandae molestiae.\n \rUllam laborum et et provident. Est doloribus suscipit sit minus modi voluptatem. Sed vel exercitationem excepturi vitae est voluptatem. Iste quod repudiandae corrupti et explicabo aut impedit atque. Ullam dolorem laudantium est est aut ratione quo et. Nostrum delectus rerum explicabo.",
+          "webStatus": "Available",
+          "adminStatus": "Available",
+          "slug": "wine",
+          "productTemplateId": null,
+          "type": "Manual",
+          "productCount": null,
+          "appliesToCondition": null,
+          "onlyShowProductsWithInventory": false,
+          "metaData": null,
+          "createdAt": "2019-02-27T21:22:10.315Z",
+          "updatedAt": "2019-06-17T18:37:28.239Z",
+          "seo": {
+            "title": "Wine",
+            "description": "Dolore consequuntur maxime pariatur voluptas temporibus architecto ut fuga autem. Beatae qui inventore ut velit laudantium. Cupiditate facere veniam..."
+          }
+        }
+      ],
+      "seo": {
+        "title": "2022 Syrah",
+        "description": "Aromatics:Dark Chocolate Mocha with savory umami and blueberry compote. And of course the Rocks &ldquo;Funk&rdquo;.Palate:Charred dark fruits, rich with..."
+      },
+      "wine": {
+        "type": "Red",
+        "varietal": "Syrah",
+        "countryCode": "US",
+        "region": "Oregon",
+        "appellation": "The Rocks District of Milton–Freewater",
+        "vintage": 2022
+      },
+      "security": {
+        "availableTo": "Public"
+      },
+      "overrideOperatingRegions": {
+        "isOverride": false,
+        "operatingStateCodes": null,
+        "operatingCountryCodes": null
+      },
+      "productTemplate": null
+    }
+  ]
+}

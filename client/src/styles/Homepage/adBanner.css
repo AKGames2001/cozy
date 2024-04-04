@@ -1,0 +1,32 @@
+.ad-banner {
+    display: flex;
+    height: 400px;
+    width: 100vw;
+    justify-content: center;
+    object-fit: cover;
+    background-image: url('../../assets/images/ad-banner.jpg');
+}
+
+.ad-banner-offer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: rgba(33, 255, 25, 0.514);
+    color: #fff;
+    gap: 2.5rem;
+}
+
+.ad-banner-offer h1 {
+    font-size: 40px;
+}
+
+.ad-banner-offer button {
+    all: unset;
+    background-color: var(--btn-color);
+    color: var(--text-color-light);
+    font-weight: normal;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
