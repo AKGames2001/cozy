@@ -7,9 +7,12 @@ import { Routes, Route } from "react-router-dom";
 function HomeRoutes(props) {
   return (
     <>
-      <Navbar  userStatus={props.userStatus} auth={props.auth}/>
+      <Navbar userStatus={props.userStatus} auth={props.auth} />
       <Routes>
+        {/* Route: / */}
         <Route path="/" element={<HomePage />} />
+
+        {/* Route: /abx */}
         <Route path="/abx" element={<HomePage />} />
       </Routes>
       <Footer />

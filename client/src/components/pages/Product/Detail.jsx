@@ -4,7 +4,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
 
-function ProductDetail(props) {
+function Detail(props) {
   const [isLoading, setIsLoading] = useState(true);
   const [apiData, setApiData] = useState();
   const location = useLocation();
@@ -110,4 +110,4 @@ function ProductDetail(props) {
   );
 }
 
-export default ProductDetail;
+export default Detail;

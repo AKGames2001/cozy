@@ -1,17 +1,17 @@
 import React from "react";
-import ProductDetail from "../../components/pages/Product/ProductDetail";
+import Detail from "../../components/pages/Product/Detail";
 import Recommedation from "../../components/pages/Home/Recommendation";
 import "../../styles/ProductPage/product.css";
 
-function Product(props) {
+function ProductDetails(props) {
   return (
     <>
       <div className="product-page">
-        <ProductDetail userData={props.userData}/>
+        <Detail userData={props.userData}/>
         <Recommedation />
       </div>
     </>
   );
 }
 
-export default Product;
+export default ProductDetails;

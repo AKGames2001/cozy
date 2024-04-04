@@ -7,7 +7,7 @@ import { LuLogIn } from "react-icons/lu";
 import { LuLogOut } from "react-icons/lu";
 import LogoImg from "../../assets/images/logo.png";
 import "../../styles/navbar.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Navbar(props) {
   const naviagte = useNavigate();
@@ -59,7 +59,7 @@ function Navbar(props) {
               className="nav-icon"
               onClick={(e) => {
                 e.preventDefault();
-                props.userStatus ? naviagte("/transaction/cart") : naviagte("/auth");
+                props.userStatus ? naviagte("/cart") : naviagte("/auth");
               }}
             >
               <MdOutlineShoppingCart />
@@ -72,13 +72,13 @@ function Navbar(props) {
           </div>
         </div>
         <div className="nav-bar-lower">
-          <a href="example.com">Home</a>
-          <a href="example.com">Offers</a>
-          <a href="example.com">Mixed Cases</a>
-          <a href="example.com">Wine Club</a>
-          <a href="example.com">Gifts</a>
-          <a href="example.com">Events and Services</a>
-          <a href="example.com">Advice</a>
+          <Link to="/">Home</Link>
+          <Link to="/">Offers</Link>
+          <Link to="/">Mixed Cases</Link>
+          <Link to="/">Wine Club</Link>
+          <Link to="/">Gifts</Link>
+          <Link to="/">Events and Services</Link>
+          <Link to="/">Advice</Link>
         </div>
       </div>
     </>

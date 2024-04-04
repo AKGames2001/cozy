@@ -35,6 +35,11 @@
 .cart-product-image img {
   height: 180px;
   width: auto;
+  cursor: pointer;
+}
+
+.cart-product-title {
+  cursor: pointer;
 }
 
 .cart-product-info {

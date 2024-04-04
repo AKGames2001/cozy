@@ -4,7 +4,7 @@ import HomeRoutes from "./routes/HomeRoutes";
 import AuthRoutes from "./routes/AuthRoutes";
 import ProductRoutes from "./routes/ProductRoutes";
 import { useState } from "react";
-import TransactionRoutes from "./routes/TransactionRoutes";
+import CartRoutes from "./routes/CartRoutes";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -47,9 +47,9 @@ function App() {
             }
           ></Route>
           <Route
-            path="/transaction/*"
+            path="/cart/*"
             element={
-              <TransactionRoutes
+              <CartRoutes
                 userStatus={isLoggedIn}
                 auth={setLogout}
                 userData={userData}
