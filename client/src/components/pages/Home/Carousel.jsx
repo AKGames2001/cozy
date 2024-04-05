@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Featured_1 from "../../../assets/images/featured-1.jpg";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import "../../../styles/Homepage/carousel.css";
 
 function  Carousel() {
   const [curr, setCurr] = useState(0);
