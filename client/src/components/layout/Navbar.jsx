@@ -6,7 +6,6 @@ import { FaRegHeart } from "react-icons/fa";
 import { LuLogIn } from "react-icons/lu";
 import { LuLogOut } from "react-icons/lu";
 import LogoImg from "../../assets/images/logo.png";
-import "../../styles/navbar.css";
 import { useNavigate, Link } from "react-router-dom";
 
 function Navbar(props) {
@@ -14,22 +13,22 @@ function Navbar(props) {
   console.log("user", props.userStatus);
   return (
     <>
-      <div className="nav-bar">
-        <div className="nav-bar-upper">
-          <img src={LogoImg} alt="/"></img>
-          <div className="nav-icons">
-            <div className="nav-icon">
+      <div className="flex flex-col items-center w-full bg-[#f9e4d4] py-[10px] gap-3">
+        <div className="flex w-4/5 justify-between items-center">
+          <img className="h-[50px] w-auto" src={LogoImg} alt="/"></img>
+          <div className="flex gap-5">
+            <div className="flex flex-col gap-1 justify-center items-center text-lg cursor-pointer">
               <GrSearch />
-              <p>Search</p>
+              <p className="text-xs">Search</p>
             </div>
             {props.userStatus ? (
               <>
-                <div className="nav-icon">
+                <div className="flex flex-col gap-1 justify-center items-center text-lg cursor-pointer">
                   <CgProfile />
-                  <p>Profile</p>
+                  <p className="text-xs">Profile</p>
                 </div>
                 <div
-                  className="nav-icon"
+                  className="flex flex-col gap-1 justify-center items-center text-lg cursor-pointer"
                   onClick={(e) => {
                     e.preventDefault();
                     props.auth(false);
@@ -37,48 +36,48 @@ function Navbar(props) {
                   }}
                 >
                   <LuLogOut />
-                  <p>Logout</p>
+                  <p className="text-xs">Logout</p>
                 </div>
               </>
             ) : (
               <>
                 <div
-                  className="nav-icon"
+                  className="flex flex-col gap-1 justify-center items-center text-lg cursor-pointer"
                   onClick={(e) => {
                     e.preventDefault();
                     naviagte("/auth");
                   }}
                 >
                   <LuLogIn />
-                  <p>Login</p>
+                  <p className="text-xs">Login</p>
                 </div>
               </>
             )}
 
             <div
-              className="nav-icon"
+              className="flex flex-col gap-1 justify-center items-center text-lg cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
                 props.userStatus ? naviagte("/cart") : naviagte("/auth");
               }}
             >
               <MdOutlineShoppingCart />
-              <p>Cart</p>
+              <p className="text-xs">Cart</p>
             </div>
-            <div className="nav-icon">
+            <div className="flex flex-col gap-1 justify-center items-center text-lg cursor-pointer">
               <FaRegHeart />
-              <p>Wishlist</p>
+              <p className="text-xs">Wishlist</p>
             </div>
           </div>
         </div>
-        <div className="nav-bar-lower">
-          <Link to="/">Home</Link>
-          <Link to="/">Offers</Link>
-          <Link to="/">Mixed Cases</Link>
-          <Link to="/">Wine Club</Link>
-          <Link to="/">Gifts</Link>
-          <Link to="/">Events and Services</Link>
-          <Link to="/">Advice</Link>
+        <div className="flex w-4/5 justify-center gap-8">
+          <Link className="no-underline text-lg text-[#000000]" to="/">Home</Link>
+          <Link className="no-underline text-lg text-[#000000]" to="/">Offers</Link>
+          <Link className="no-underline text-lg text-[#000000]" to="/">Mixed Cases</Link>
+          <Link className="no-underline text-lg text-[#000000]" to="/">Wine Club</Link>
+          <Link className="no-underline text-lg text-[#000000]" to="/">Gifts</Link>
+          <Link className="no-underline text-lg text-[#000000]" to="/">Events and Services</Link>
+          <Link className="no-underline text-lg text-[#000000]" to="/">Advice</Link>
         </div>
       </div>
     </>

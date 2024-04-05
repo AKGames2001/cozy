@@ -26,7 +26,7 @@ function Detail(props) {
         setApiData(data);
         setIsLoading(false);
       });
-  }, []);
+  });
 
   function handleAddToCart() {
     console.log(props.userData);
