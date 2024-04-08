@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cozyImage from "../../../assets/images/logo.png";
+// import cozyImage from "../../../assets/images/logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function Register(props) {
@@ -37,67 +37,47 @@ function Register(props) {
   }
 
   return (
-    <div className="auth">
-      <div className="auth-header">
-        <img src={cozyImage} alt="/" />
-        <div className="auth-title">
-          <h3>Sign in or create your account</h3>
-          <p>Not sure if you have an account?</p>
-          <p>Enter your email and we’ll check for you</p>
-        </div>
-        <div className="auth-form">
-          <form method="post" onSubmit={submitHandler}>
-            <label
-              htmlFor="username"
-              style={{ fontSize: "12px", fontWeight: "600" }}
-            >
-              Username
-            </label>
-            <input
-              name="username"
-              className="form-input-field"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <label
-              htmlFor="email"
-              style={{ fontSize: "12px", fontWeight: "600" }}
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="form-input-field"
-              value={location.state.email}
-              disabled
-            />
-            <label
-              htmlFor="password"
-              style={{ fontSize: "12px", fontWeight: "600" }}
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              name="password"
-              className="form-input-field"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button type="submit" className="form-submit-btn">
-              Continue
-            </button>
-          </form>
-        </div>
-        <div className="auth-info">
-          <p>
-            By continuing, you agree to Cozy's Terms of Use and Privacy Policy.
-          </p>
-        </div>
-      </div>
-      <div className="auth-footer"></div>
-    </div>
+    <form
+      className="flex flex-col w-full gap-1"
+      method="post"
+      onSubmit={submitHandler}
+    >
+      <label htmlFor="username" style={{ fontSize: "12px", fontWeight: "600" }}>
+        Username
+      </label>
+      <input
+        name="username"
+        className="h-8 border-[1px] border-gray-300 border-solid rounded px-2"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <label htmlFor="email" style={{ fontSize: "12px", fontWeight: "600" }}>
+        Email
+      </label>
+      <input
+        type="email"
+        name="email"
+        className="h-8 border-[1px] border-gray-300 border-solid rounded px-2"
+        value={location.state.email}
+        disabled
+      />
+      <label htmlFor="password" style={{ fontSize: "12px", fontWeight: "600" }}>
+        Password
+      </label>
+      <input
+        type="password"
+        name="password"
+        className="h-8 border-[1px] border-gray-300 border-solid rounded px-2"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <button
+        type="submit"
+        className="flex justify-center w-auto bg-[#6B240C] text-white mt-3 py-3 px-1 rounded cursor-pointer"
+      >
+        Continue
+      </button>
+    </form>
   );
 }
 

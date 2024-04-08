@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cozyImage from "../../../assets/images/logo.png";
+// import cozyImage from "../../../assets/images/logo.png";
 import { useNavigate } from "react-router-dom";
 
 function Auth() {
@@ -7,7 +7,7 @@ function Auth() {
   const navigate = useNavigate();
 
   // function validator() {
-    
+
   // }
 
   function submitHandler(e) {
@@ -25,7 +25,9 @@ function Auth() {
       .then((data) => {
         console.log(data);
         if (data.statusCode === "200") {
-          navigate("/auth/login", { state: { email: email, username: data.username } });
+          navigate("/auth/login", {
+            state: { email: email, username: data.username },
+          });
         } else {
           navigate("/auth/register", { state: { email: email } });
         }
@@ -33,42 +35,28 @@ function Auth() {
   }
 
   return (
-    <div className="auth">
-      <div className="auth-header">
-        <img src={cozyImage} alt="/" />
-        <div className="auth-title">
-          <h3>Sign in or create your account</h3>
-          <p>Not sure if you have an account?</p>
-          <p>Enter your email and we’ll check for you</p>
-        </div>
-        <div className="auth-form">
-          <form method="post" onSubmit={submitHandler}>
-            <label
-              htmlFor="email"
-              style={{ fontSize: "12px", fontWeight: "600" }}
-            >
-              Email Address
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="form-input-field"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <button type="submit" className="form-submit-btn">
-              Continue
-            </button>
-          </form>
-        </div>
-        <div className="auth-info">
-          <p>
-            By continuing, you agree to Cozy's Terms of Use and Privacy Policy.
-          </p>
-        </div>
-      </div>
-      <div className="auth-footer"></div>
-    </div>
+    <form
+      className="flex flex-col w-full gap-1"
+      method="post"
+      onSubmit={submitHandler}
+    >
+      <label htmlFor="email" style={{ fontSize: "12px", fontWeight: "600" }}>
+        Email Address
+      </label>
+      <input
+        type="email"
+        name="email"
+        className="h-8 border-[1px] border-gray-300 border-solid rounded px-2"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <button
+        type="submit"
+        className="flex justify-center w-auto bg-[#6B240C] text-white mt-3 py-3 px-1 rounded cursor-pointer"
+      >
+        Continue
+      </button>
+    </form>
   );
 }
 

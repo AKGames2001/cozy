@@ -22,6 +22,8 @@ function App() {
     setIsLoggedIn(false);
   }
 
+  console.log("Hello");
+
   return (
     <div className="App">
       <BrowserRouter>
