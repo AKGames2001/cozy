@@ -5,62 +5,62 @@ import { FaRegCopyright } from "react-icons/fa6";
 function Footer() {
   return (
     <>
-      <div className="flex items-center justify-evenly w-full h-[100px] bg-green-600">
-        <div className="flex items-center gap-2 text-white">
+      <div className="flex flex-col items-left bg-green-600 w-full h-full py-3 md:h-[100px]  md:flex-row md:justify-evenly md:items-center">
+        <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
-          <div className="text-sm">
+          <div className="flex text-sm gap-3 md:block md:gap-0">
             <p>Free Delivery</p>
             <p>From $50 & Up</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-white">
+        <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
-          <div className="text-sm">
+          <div className="flex text-sm gap-3 md:block md:gap-0">
             <p>Free Delivery</p>
             <p>From $50 & Up</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-white">
+        <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
-          <div className="text-sm">
+          <div className="flex text-sm gap-3 md:block md:gap-0">
             <p>Free Delivery</p>
             <p>From $50 & Up</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-white">
+        <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
-          <div className="text-sm">
+          <div className="flex text-sm gap-3 md:block md:gap-0">
             <p>Free Delivery</p>
             <p>From $50 & Up</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-white">
+        <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
-          <div className="text-sm">
+          <div className="flex text-sm gap-3 md:block md:gap-0">
             <p>Free Delivery</p>
             <p>From $50 & Up</p>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-white">
+        <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
-          <div className="text-sm">
+          <div className="flex text-sm gap-3 md:block md:gap-0">
             <p>Free Delivery</p>
             <p>From $50 & Up</p>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 w-full py-[30px]">
-        <div className="col-span-1">
-          <h3>AKGAMEZ</h3>
+      <div className="grid grid-flow-row md:grid-cols-4 w-full py-2 px-4">
+        <div className="flex flex-col w-full justify-center py-10 md:col-span-1 md:pl-[25%]">
+          <h3 className="font-bold text-3xl pb-2">COZY</h3>
           <p>+91-1234567890</p>
           <p>221B Baker Street</p>
         </div>
-        <div className="col-span-3 grid grid-cols-5 text-sm">
-          <div className="flex flex-col gap-5">
+        <div className="grid grid-rows-3 grid-cols-2 text-sm gap-8 md:col-span-3 md:grid-cols-5 md:grid-rows-1 md:py-8">
+          <div className="flex flex-col gap-3">
             <div>
               <p className="font-bold">About Us</p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 md:gap-3">
               <p className="cursor-pointer hover:font-semibold">Company</p>
               <p className="cursor-pointer hover:font-semibold">News</p>
               <p className="cursor-pointer hover:font-semibold">Investors</p>
@@ -69,11 +69,11 @@ function Footer() {
               <p className="cursor-pointer hover:font-semibold">Policies</p>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             <div className="footer-section-header">
               <p className="font-bold">Shop By Category</p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 md:gap-3">
               <p className="cursor-pointer hover:font-semibold">Today's Deal</p>
               <p className="cursor-pointer hover:font-semibold">Best Seller</p>
               <p className="cursor-pointer hover:font-semibold">New Arrivals</p>
@@ -82,11 +82,11 @@ function Footer() {
               <p className="cursor-pointer hover:font-semibold">Featured</p>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             <div className="footer-section-header">
               <p className="font-bold">Support & Service</p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 md:gap-3">
               <p className="cursor-pointer hover:font-semibold">Customer Service</p>
               <p className="cursor-pointer hover:font-semibold">Protection Plan</p>
               <p className="cursor-pointer hover:font-semibold">Schedule a Service</p>
@@ -95,11 +95,11 @@ function Footer() {
               <p className="cursor-pointer hover:font-semibold">FAQ</p>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             <div className="footer-section-header">
               <p className="font-bold">Partnership</p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 md:gap-3">
               <p className="cursor-pointer hover:font-semibold">Affliate Program</p>
               <p className="cursor-pointer hover:font-semibold">Developers</p>
               <p className="cursor-pointer hover:font-semibold">Mediamarket Ignite</p>
@@ -108,11 +108,11 @@ function Footer() {
               <p className="cursor-pointer hover:font-semibold">Advertise with Us</p>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             <div className="footer-section-header">
               <p className="font-bold">Customer Care</p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 md:gap-3">
               <p className="cursor-pointer hover:font-semibold">My Accounts</p>
               <p className="cursor-pointer hover:font-semibold">Track Orders</p>
               <p className="cursor-pointer hover:font-semibold">Shop</p>
