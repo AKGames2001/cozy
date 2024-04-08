@@ -57,14 +57,14 @@ function Recommendation() {
     <></>
   ) : (
     <>
-      <div className="recommendation">
+      <div className="w-full flex flex-col items-center py-8">
         <h3>Recommended for you</h3>
-        <div className="recommendation-tab-headers">
-          <button className="active" onClick={clickHandler}>ALL WINE</button>
-          <button className="" onClick={clickHandler}>FINE WINE</button>
-          <button className="" onClick={clickHandler}>MIXED CASE</button>
+        <div className="flex gap-4">
+          <button className="text-xs font-bold cursor-pointer active" onClick={clickHandler}>ALL WINE</button>
+          <button className="text-xs font-bold cursor-pointer" onClick={clickHandler}>FINE WINE</button>
+          <button className="text-xs font-bold cursor-pointer" onClick={clickHandler}>MIXED CASE</button>
         </div>
-        <div className="recommendation-tab-display">{splitData()}</div>
+        <div className="flex flex-col items-center w-full h-full">{splitData()}</div>
       </div>
     </>
   );

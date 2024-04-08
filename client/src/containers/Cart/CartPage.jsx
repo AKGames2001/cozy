@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/CartPage/cart.css";
+// import "../../styles/CartPage/cart.css";
 import CartProduct from "../../components/pages/Cart/CartProduct";
 import CartPayment from "../../components/pages/Cart/CartPayment";
 
@@ -40,7 +40,7 @@ function CartPage(props) {
     <></>
   ) : (
     <>
-      <div className="cart">
+      <div className="flex justify-center py-5 w-full gap-5 bg-[rgb(255,236,236)]">
         {/* for product window */}
         <CartProduct cartData={cartData} costTotal={costTotal} />
 

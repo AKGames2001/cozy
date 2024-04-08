@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../../styles/Homepage/featured.css";
+// import "../../../styles/Homepage/featured.css";
 import { useNavigate } from "react-router-dom";
 
 function Featured() {
@@ -16,9 +16,9 @@ function Featured() {
   function mapper() {
     return apiData.map((element) => {
       return (
-        <div className="featured-product" key={element.id} onClick={redirectHandler} id={element.id}>
-          <img src={"images/" + element.image} alt="/" />
-          <div className="featured-product-info">
+        <div className="flex flex-col w-[calc(100vw/5)] gap-4 cursor-pointer items-center transition-transform ease-in-out duration-200 hover:scale-95" key={element.id} onClick={redirectHandler} id={element.id}>
+          <img className="w-4/5" src={"images/" + element.image} alt="/" />
+          <div className="flex flex-col items-center">
             <p style={{ fontWeight: "700" }}>{element.title}</p>
             <p>${element.price}</p>
           </div>
@@ -46,9 +46,9 @@ function Featured() {
     <></>
   ) : (
     <>
-      <div className="featured-products">
+      <div className="flex flex-col w-full items-center py-8">
         <h3>Featured Products</h3>
-        <div className="featured-product-list">
+        <div className="flex justify-center gap-6 py-8">
           {mapper()}
         </div>
       </div>

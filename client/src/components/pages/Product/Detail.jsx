@@ -49,59 +49,59 @@ function Detail(props) {
     <></>
   ) : (
     <>
-      <div className="product-detail">
-        <div className="product-detail-image">
-          <img src={"/images" + apiData.image} alt="/" />
+      <div className="flex w-4/5">
+        <div className="p-8">
+          <img className="w-auto h-[400px]" src={"/images" + apiData.image} alt="/" />
         </div>
-        <div className="product-detail-info">
-          <div className="product-detail-title">
-            <h3 style={{ fontSize: "30px" }}>{apiData.title}</h3>
+        <div className="flex flex-col p-5 gap-2">
+          <div>
+            <h3 className="text-3xl">{apiData.title}</h3>
           </div>
-          <div className="product-detail-price">
-            <p style={{ fontSize: "20px" }}>${apiData.price}</p>
+          <div>
+            <p className="text-xl">${apiData.price}</p>
           </div>
-          <div className="product-detail-description">
-            <p style={{ fontSize: "14px" }}>{apiData.description}</p>
+          <div>
+            <p className="text-sm">{apiData.description}</p>
           </div>
-          <div className="prodcut-detail-options">
-            <div className="product-detail-options-item">
-              <p>Size:</p>
-              <div className="product-detail-option-size">
-                <p>XS</p>
-                <p>S</p>
-                <p>M</p>
-                <p>L</p>
-                <p>XL</p>
+          <div>
+            <div className="grid items-center w-1/2 py-3 grid-cols-2">
+              <p className="w-[100px] text-sm">Size:</p>
+              <div className="w-auto flex gap-1">
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">XS</p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">S</p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">M</p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">L</p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">XL</p>
               </div>
             </div>
-            <div className="product-detail-options-item">
-              <p>Origin:</p>
+            <div className="grid items-center w-1/2 py-3 grid-cols-2">
+              <p className="w-[100px] text-sm">Origin:</p>
               <div>
-                <p>Australia</p>
+                <p className="text-sm">Australia</p>
               </div>
             </div>
-            <div className="product-detail-options-item">
-              <p>Quanitity:</p>
-              <select>
+            <div className="grid items-center w-1/2 py-3 grid-cols-2">
+              <p className="w-[100px] text-sm">Quanitity:</p>
+              <select className="w-1/5 border-b-[1px] border-solid border-[#6B240C]">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
               </select>
             </div>
           </div>
-          <div className="product-detail-delivery-info">
-            <p>
+          <div className="flex flex-col gap-1">
+            <p className="flex gap-2 text-xs">
               <IoMdCheckmark /> Free shipping available
             </p>
-            <p>
+            <p className="flex gap-2 text-xs">
               <TbTruckDelivery /> Expected Delivery By: Thursday, May 6
             </p>
           </div>
-          <div className="product-detail-buttons">
-            <button className="product-detail-btn">Buy Now</button>
-            <button className="product-detail-btn" onClick={handleAddToCart}>Add to Cart</button>
-            <button className="product-detail-btn-alt">
-              <FaPlus /> ADD TO WISHLIST
+          <div className="flex gap-5">
+            <button className="bg-[#6B240C] text-sm py-3 px-8 text-white rounded cursor-pointer">Buy Now</button>
+            <button className="bg-[#6B240C] text-sm py-3 px-8 text-white rounded cursor-pointer" onClick={handleAddToCart}>Add to Cart</button>
+            <button className="flex items-center gap-2 font-semibold text-[#6B240C] ml-5 cursor-pointer">
+              <FaPlus />ADD TO WISHLIST
             </button>
           </div>
         </div>

@@ -37,16 +37,16 @@ function Register(props) {
   }
 
   return (
-    <div className="auth">
-      <div className="auth-header">
+    <div className="w-full h-full flex flex-col items-center">
+      <div className="flex flex-col items-center w-1/2 gap-6">
         <img src={cozyImage} alt="/" />
-        <div className="auth-title">
-          <h3>Sign in or create your account</h3>
-          <p>Not sure if you have an account?</p>
-          <p>Enter your email and we’ll check for you</p>
+        <div className="flex flex-col items-center w-1/2">
+          <h3 className="text-2xl p-5">Sign in or create your account</h3>
+          <p className="text-sm p-[2px]">Not sure if you have an account?</p>
+          <p className="text-sm p-[2px]">Enter your email and we’ll check for you</p>
         </div>
-        <div className="auth-form">
-          <form method="post" onSubmit={submitHandler}>
+        <div className="flex flex-col items-center w-1/2 gap-6">
+          <form className="flex flex-col w-full gap-1" method="post" onSubmit={submitHandler}>
             <label
               htmlFor="username"
               style={{ fontSize: "12px", fontWeight: "600" }}
@@ -55,7 +55,7 @@ function Register(props) {
             </label>
             <input
               name="username"
-              className="form-input-field"
+              className="h-8 border-[1px] border-gray-300 border-solid rounded"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
@@ -68,7 +68,7 @@ function Register(props) {
             <input
               type="email"
               name="email"
-              className="form-input-field"
+              className="h-8 border-[1px] border-gray-300 border-solid rounded"
               value={location.state.email}
               disabled
             />
@@ -81,16 +81,16 @@ function Register(props) {
             <input
               type="password"
               name="password"
-              className="form-input-field"
+              className="h-8 border-[1px] border-gray-300 border-solid rounded"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit" className="form-submit-btn">
+            <button type="submit" className="flex justify-center w-auto bg-[#6B240C] text-white mt-3 py-3 px-1 rounded cursor-pointer">
               Continue
             </button>
           </form>
         </div>
-        <div className="auth-info">
+        <div className="text-xs">
           <p>
             By continuing, you agree to Cozy's Terms of Use and Privacy Policy.
           </p>
