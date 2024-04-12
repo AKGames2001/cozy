@@ -9,7 +9,7 @@ function CartPage(props) {
   const [costTotal, setCostTotal] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/cart/fetch", {
+    fetch("http://192.168.15.223:5000/api/cart/fetch", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

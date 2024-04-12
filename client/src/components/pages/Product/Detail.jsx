@@ -2,36 +2,18 @@ import React, { useEffect, useState } from "react";
 import { IoMdCheckmark } from "react-icons/io";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa6";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Detail(props) {
   const [isLoading, setIsLoading] = useState(true);
   const [apiData, setApiData] = useState();
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.log(location.state.id);
-    fetch("http://localhost:5000/api/product", {
-      method: "POST",   
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ id: location.state.id }),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setApiData(data);
-        setIsLoading(false);
-      });
-  });
-
-  function handleAddToCart() {
-    console.log(props.userData);
-    fetch("http://localhost:5000/api/cart/add", {
-      method: "POST",   
+    fetch("http://192.168.15.223:5000/api/product", {
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
@@ -42,7 +24,50 @@ function Detail(props) {
       })
       .then((data) => {
         console.log(data);
+        setApiData(data);
+        setIsLoading(false);
       });
+  }, []);
+
+  function handleAddToCart() {
+    console.log(props.userData);
+    if (props.userStatus) {
+      fetch("http://192.168.15.223:5000/api/cart/add", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id: location.state.id, email: props.userData }),
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data);
+        });
+    } else {
+      navigate("/auth");
+    }
+  }
+
+  function handleAddToWishlist() {
+    if (props.userStatus) {
+      fetch("http://192.168.15.223:5000/api/cart/wishlist/add", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id: location.state.id, email: props.userData }),
+      })
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data);
+        });
+    } else {
+      navigate("/auth");
+    }
   }
 
   return isLoading ? (
@@ -51,7 +76,11 @@ function Detail(props) {
     <>
       <div className="flex w-4/5">
         <div className="p-8">
-          <img className="w-auto h-[400px]" src={"/images" + apiData.image} alt="/" />
+          <img
+            className="w-auto h-[400px]"
+            src={"/images" + apiData.image}
+            alt="/"
+          />
         </div>
         <div className="flex flex-col p-5 gap-2">
           <div>
@@ -67,11 +96,21 @@ function Detail(props) {
             <div className="grid items-center w-1/2 py-3 grid-cols-2">
               <p className="w-[100px] text-sm">Size:</p>
               <div className="w-auto flex gap-1">
-                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">XS</p>
-                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">S</p>
-                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">M</p>
-                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">L</p>
-                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">XL</p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">
+                  XS
+                </p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">
+                  S
+                </p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">
+                  M
+                </p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">
+                  L
+                </p>
+                <p className="text-sm flex justify-center items-center w-10 p-2 border-[1px] border-solid border-black rounded cursor-pointer hover:bg-black hover:text-white">
+                  XL
+                </p>
               </div>
             </div>
             <div className="grid items-center w-1/2 py-3 grid-cols-2">
@@ -98,10 +137,21 @@ function Detail(props) {
             </p>
           </div>
           <div className="flex gap-5">
-            <button className="bg-[#6B240C] text-sm py-3 px-8 text-white rounded cursor-pointer">Buy Now</button>
-            <button className="bg-[#6B240C] text-sm py-3 px-8 text-white rounded cursor-pointer" onClick={handleAddToCart}>Add to Cart</button>
-            <button className="flex items-center gap-2 font-semibold text-[#6B240C] ml-5 cursor-pointer">
-              <FaPlus />ADD TO WISHLIST
+            <button className="bg-[#6B240C] text-sm py-3 px-8 text-white rounded cursor-pointer">
+              Buy Now
+            </button>
+            <button
+              className="bg-[#6B240C] text-sm py-3 px-8 text-white rounded cursor-pointer"
+              onClick={handleAddToCart}
+            >
+              Add to Cart
+            </button>
+            <button
+              className="flex items-center gap-2 font-semibold text-[#6B240C] ml-5 cursor-pointer"
+              onClick={handleAddToWishlist}
+            >
+              <FaPlus />
+              ADD TO WISHLIST
             </button>
           </div>
         </div>

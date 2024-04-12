@@ -5,7 +5,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 function Footer() {
   return (
     <>
-      <div className="flex flex-col items-left bg-green-600 w-full h-full py-3 md:h-[100px]  md:flex-row md:justify-evenly md:items-center">
+      <div className="flex flex-col items-left bg-[#8c7851] w-full h-full py-3 md:h-[100px]  md:flex-row md:justify-evenly md:items-center">
         <div className="flex items-center gap-2 px-2 text-white md:px-0">
           <IoMdCard className="text-2xl" />
           <div className="flex text-sm gap-3 md:block md:gap-0">

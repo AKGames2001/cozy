@@ -6,6 +6,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { LuLogIn } from "react-icons/lu";
 import { LuLogOut } from "react-icons/lu";
 import { IoMenu } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineLocalPhone } from "react-icons/md";
 import LogoImg from "../../assets/images/logo.png";
 import { useNavigate, Link } from "react-router-dom";
 
@@ -15,6 +17,16 @@ function Navbar(props) {
 
   return (
     <>
+      <div className="flex w-full justify-between items-center h-6 p-4 bg-[#8ba462] text-white font-roboto">
+        <div className="flex gap-6">
+          <div className="flex gap-1 items-center cursor-pointer"><MdOutlineLocalPhone />Phone Number</div>
+          <div className="flex gap-1 items-center cursor-pointer"><MdOutlineEmail />Email ID</div>
+        </div>
+        <div className="flex gap-6">
+          <div className="flex gap-1 cursor-pointer">Deals from Down Under</div>
+          <div className="flex gap-1 cursor-pointer">Welcome Offer</div>
+        </div>
+      </div>
       <div className="flex flex-col items-center w-full bg-[#f9e4d4] py-[10px] gap-3">
         <div className="flex w-4/5 justify-between items-center">
           <img className="h-[50px] w-auto" src={LogoImg} alt="/"></img>

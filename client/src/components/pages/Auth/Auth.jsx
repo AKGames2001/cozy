@@ -12,7 +12,7 @@ function Auth() {
 
   function submitHandler(e) {
     e.preventDefault();
-    fetch("http://localhost:5000/api/auth", {
+    fetch("http://192.168.15.223:5000/api/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

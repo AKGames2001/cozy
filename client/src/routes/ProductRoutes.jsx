@@ -14,7 +14,7 @@ function ProductRoutes(props) {
         <Route index element={<ProductListing />} />
 
         {/* Route: /product/custom */}
-        <Route path="/custom" element={<ProductDetails userData={props.userData} />} />
+        <Route path="/custom" element={<ProductDetails userData={props.userData} userStatus={props.userStatus} />} />
       </Routes>
       <Footer />
     </>

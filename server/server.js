@@ -151,21 +151,21 @@ app.get("/api/carousel", (req, res) => {
         id: "01",
         title: "Your Best Value Proposition",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti facilis libero fugit quis quibusdam commodi quae minus veritatis qui dolorem modi tempora culpa beatae placeat, ex cum eius ab.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti facilis libero fugit quis",
         image: "featured-1.jpg",
       },
       {
         id: "02",
         title: "Your Best Value Proposition",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti facilis libero fugit quis quibusdam commodi quae minus veritatis qui dolorem modi tempora culpa beatae placeat, ex cum eius ab.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti facilis libero fugit quis",
         image: "featured-1.jpg",
       },
       {
         id: "03",
         title: "Your Best Value Proposition",
         description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti facilis libero fugit quis quibusdam commodi quae minus veritatis qui dolorem modi tempora culpa beatae placeat, ex cum eius ab.",
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corrupti facilis libero fugit quis",
         image: "featured-1.jpg",
       },
     ],
@@ -176,10 +176,29 @@ app.get("/api/carousel", (req, res) => {
 app.post("/api/product", (req, res) => {
   const productId = req.body.id;
   const data = getWineryData();
+  const userEmail = req.body.email;
+
+  let userData = getUserData(userEmail);
 
   let jsonData = data.filter((ele) => {
     return ele.id.toLowerCase().includes(productId.toLowerCase());
   });
+
+  let cartData = userData.cart.filter((ele) => {
+    return ele.id.toLowerCase().includes(productId.toLowerCase());
+  });
+
+  let inCart = (cartData != []) ? true : false;
+  console.log("cartData: ", cartData)
+
+  let wishData = userData.wishlist.filter((ele) => {
+    return ele.id.toLowerCase().includes(productId.toLowerCase());
+  });
+
+  let inWishlist = wishData ? true : false;
+
+  console.log("cart: ", inCart);
+  console.log("wishlist: ", inWishlist);
 
   res.json({
     id: jsonData[0].id,
@@ -187,6 +206,8 @@ app.post("/api/product", (req, res) => {
     image: "/" + jsonData[0].image,
     description: jsonData[0].collections[0].seo.description,
     price: jsonData[0].variants[0].price,
+    inCart: inCart,
+    inWishlist: inWishlist,
   });
 });
 
@@ -195,8 +216,6 @@ app.post("/api/product", (req, res) => {
 app.post("/api/cart/fetch", (req, res) => {
   const userEmail = req.body.email;
 
-  console.log("Email: ", userEmail);
-
   let file_content = fs.readFileSync(userFileName);
   let content = JSON.parse(file_content);
 
@@ -204,11 +223,45 @@ app.post("/api/cart/fetch", (req, res) => {
     return username.email.toLowerCase().includes(userEmail.toLowerCase());
   });
 
-  console.log("jsonEmail", jsonEmail[0].cart);
-
   res.json({
     cart: jsonEmail[0].cart,
   });
+});
+
+app.post("/api/cart/wishlist/add", (req, res) => {
+  const userEmail = req.body.email;
+  const productId = req.body.id;
+  const productData = getWineryData();
+
+  let jsonData = productData.filter((ele) => {
+    return ele.id.toLowerCase().includes(productId.toLowerCase());
+  });
+
+  let userData = getUserData(userEmail);
+
+  let file_content = fs.readFileSync(userFileName);
+  let content = JSON.parse(file_content);
+  content
+    .filter((a) => a.email === userData.email)[0]
+    .wishlist.push({
+      id: jsonData[0].id,
+      title: jsonData[0].title,
+      image: "/" + jsonData[0].image,
+      description: jsonData[0].collections[0].seo.description,
+      price: jsonData[0].variants[0].price,
+    });
+
+  fs.writeFile(
+    userFileName,
+    JSON.stringify(content, null, 4),
+    function writeJSON(err) {
+      if (err) {
+        res.json({ statusCode: "800" });
+      } else {
+        res.json({ statusCode: "200" });
+      }
+    }
+  );
 });
 
 app.post("/api/cart/add", (req, res) => {
@@ -222,19 +275,10 @@ app.post("/api/cart/add", (req, res) => {
 
   let userData = getUserData(userEmail);
 
-  // userData.cart.push();
-
-  // let jsonUser = {
-  //   username: userData.username,
-  //   email: userData.email,
-  //   password: userData.password,
-  //   cart: userData.cart,
-  // };
-
   let file_content = fs.readFileSync(userFileName);
   let content = JSON.parse(file_content);
-  content = content
-    .filter((a) => a.username === userData.username)[0]
+  content
+    .filter((a) => a.email === userData.email)[0]
     .cart.push({
       id: jsonData[0].id,
       title: jsonData[0].title,

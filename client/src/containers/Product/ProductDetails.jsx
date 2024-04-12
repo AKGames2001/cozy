@@ -7,7 +7,7 @@ function ProductDetails(props) {
   return (
     <>
       <div className="flex flex-col items-center w-full">
-        <Detail userData={props.userData}/>
+        <Detail userData={props.userData} userStatus={props.userStatus}/>
         <Recommedation />
       </div>
     </>

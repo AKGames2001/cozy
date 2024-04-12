@@ -28,7 +28,7 @@ function Featured() {
   }
 
   function callingData() {
-    fetch("http://localhost:5000/api/featured")
+    fetch("http://192.168.15.223:5000/api/featured")
       .then((response) => {
         return response.json();
       })
@@ -47,7 +47,7 @@ function Featured() {
   ) : (
     <>
       <div className="flex flex-col w-full items-center py-8">
-        <h3>Featured Products</h3>
+        <h3 className="text-2xl">Featured Products</h3>
         <div className="flex justify-center gap-6 py-8">
           {mapper()}
         </div>

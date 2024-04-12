@@ -1,7 +1,7 @@
 :root {
   --background-color: #ffffff;
   --base-color: #f9e4d4;
-  --btn-color: #6B240C;
+  --btn-color: #6b240c;
   --text-color-dark: #000000;
   --text-color-light: #ffffff;
   --hover-effect-color: #53ac00;
@@ -33,11 +33,27 @@ h6 {
   font-weight: bolder;
 }
 
-body, p, a {
+body,
+p,
+a {
   font-family: "Lora", serif;
   font-weight: 400;
 }
 
 body {
   overflow-x: hidden;
+}
+
+.active {
+  color: #90133b;
+  border-bottom: 1px solid #90133b;
+}
+
+.item-hover {
+  bottom: -100px;
+  transition: ease-in-out 300ms;
+}
+
+.image-hover:hover .item-hover {
+  bottom: 0px;
 }
