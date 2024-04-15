@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import "../../../styles/Homepage/featured.css";
 import { useNavigate } from "react-router-dom";
 
 function Featured() {
@@ -10,7 +9,7 @@ function Featured() {
   function redirectHandler(e) {
     e.preventDefault();
     console.log(e.target.parentNode.id);
-    navigate("/product/custom", {state: {id: e.target.parentNode.id}})
+    navigate("/product/custom/:id", {state: {id: e.target.parentNode.id}})
   }
 
   function mapper() {

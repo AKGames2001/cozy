@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "../../layout/Navbar";
 import Featured_1 from "../../../assets/images/featured-1.jpg";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-function  Carousel() {
+function Carousel(props) {
   const [curr, setCurr] = useState(0);
   const [apiData, setApiData] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -37,13 +38,32 @@ function  Carousel() {
             className="flex absolute w-full h-full justify-between gap-[10%] inset-0"
             style={{ left: i * 200 + "%" }}
           >
-            <div className="flex flex-col w-1/2 justify-center items-start gap-10" key={ele.id}>
-              <h3 style={{ fontSize: "42px",fontWeight: "600" }}>{ele.title}</h3>
+            <div
+              className="flex flex-col w-1/2 justify-center items-start gap-10"
+              key={ele.id}
+            >
+              <h3 style={{ fontSize: "42px", fontWeight: "600" }}>
+                {ele.title}
+              </h3>
               <p style={{ fontSize: "16px" }}>{ele.description}</p>
-              {ele.title ? <button className="bg-[#6b240c] text-white font-normal px-[50px] py-[10px] rounded">Start Free Trial</button> : <></>}
+              {ele.title ? (
+                <button className="bg-[#6b240c] text-white font-normal px-[50px] py-[10px] rounded">
+                  Start Free Trial
+                </button>
+              ) : (
+                <></>
+              )}
             </div>
             <div className="flex items-center w-1/2 h-full overflow-hidden">
-              {ele.title ? <img className="w-full h-full object-cover" src={Featured_1} alt="/" /> : <></>}
+              {ele.title ? (
+                <img
+                  className="w-full h-full object-cover"
+                  src={Featured_1}
+                  alt="/"
+                />
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </>
@@ -53,14 +73,15 @@ function  Carousel() {
 
   function carouselNavigator(arr) {
     // add navigator buttons under carousel
-    return <></>
+    return <></>;
   }
 
   return isLoading ? (
     <></>
   ) : (
-    <>
-      <div className="flex h-[400px] relative justify-center bg-[#f9e4d4]">
+    <div className="bg-[#f9e4d4]">
+      <Navbar userStatus={props.userStatus} auth={props.auth}/>
+      <div className="flex h-[400px] relative justify-center">
         <div
           className="flex relative w-4/5 transition ease-out duration-500"
           style={{ transform: `translateX(-${curr * 200}%)` }}
@@ -85,7 +106,7 @@ function  Carousel() {
           {carouselNavigator}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

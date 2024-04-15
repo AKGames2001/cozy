@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import cozyImage from "../../../assets/images/logo.png";
+import { authCheck } from "../../../services/authService";
 import { useNavigate } from "react-router-dom";
 
 function Auth() {
@@ -10,28 +11,21 @@ function Auth() {
 
   // }
 
-  function submitHandler(e) {
+  async function submitHandler(e) {
     e.preventDefault();
-    fetch("http://192.168.15.223:5000/api/auth", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email: email }),
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        if (data.statusCode === "200") {
-          navigate("/auth/login", {
-            state: { email: email, username: data.username },
-          });
-        } else {
-          navigate("/auth/register", { state: { email: email } });
-        }
+    const userData = { email: email };
+    const authData = await authCheck(userData);
+    console.log(authData);
+    console.log(userData);
+
+    if (authData.statusCode === "200") {
+      console.log("mai yaha hooon!!");
+      navigate("/auth/login", {
+        state: { email: email, username: authData.username },
       });
+    } else {
+      navigate("/auth/register", { state: { email: email } });
+    }
   }
 
   return (

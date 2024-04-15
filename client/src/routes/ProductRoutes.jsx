@@ -11,10 +11,10 @@ function ProductRoutes(props) {
       <Navbar userStatus={props.userStatus} auth={props.auth} />
       <Routes>
         {/* Route: /product */}
-        <Route index element={<ProductListing />} />
+        <Route index element={<ProductListing userData={props.userData} userStatus={props.userStatus} />} />
 
         {/* Route: /product/custom */}
-        <Route path="/custom" element={<ProductDetails userData={props.userData} userStatus={props.userStatus} />} />
+        <Route path="/custom/*" element={<ProductDetails userData={props.userData} userStatus={props.userStatus} />} />
       </Routes>
       <Footer />
     </>

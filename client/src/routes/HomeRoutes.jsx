@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/layout/Navbar.jsx";
 import Footer from "../components/layout/Footer.jsx";
 import HomePage from "../containers/Home/HomePage.jsx";
 import { Routes, Route } from "react-router-dom";
@@ -7,13 +6,12 @@ import { Routes, Route } from "react-router-dom";
 function HomeRoutes(props) {
   return (
     <>
-      <Navbar userStatus={props.userStatus} auth={props.auth} />
       <Routes>
         {/* Route: / */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage userStatus={props.userStatus} auth={props.auth} />} />
 
         {/* Route: /abx */}
-        <Route path="/abx" element={<HomePage />} />
+        <Route path="/abx" element={<HomePage userStatus={props.userStatus} auth={props.auth}/>} />
       </Routes>
       <Footer />
     </>

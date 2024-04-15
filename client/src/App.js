@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./styles/app.css";
 import HomeRoutes from "./routes/HomeRoutes";
 import AuthRoutes from "./routes/AuthRoutes";
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+
         <Routes>
           <Route
             path="*"
@@ -59,7 +59,6 @@ function App() {
             }
           ></Route>
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }

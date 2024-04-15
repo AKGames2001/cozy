@@ -1,4 +1,4 @@
-import React, { useDebugValue, useEffect } from "react";
+import React from "react";
 import { GrSearch } from "react-icons/gr";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -27,7 +27,7 @@ function Navbar(props) {
           <div className="flex gap-1 cursor-pointer">Welcome Offer</div>
         </div>
       </div>
-      <div className="flex flex-col items-center w-full bg-[#f9e4d4] py-[10px] gap-3">
+      <div className="flex flex-col items-center w-full bg-transparent py-[10px] gap-3">
         <div className="flex w-4/5 justify-between items-center">
           <img className="h-[50px] w-auto" src={LogoImg} alt="/"></img>
           <IoMenu
@@ -152,7 +152,7 @@ function Navbar(props) {
           <div className="grid grid-cols-2 w-full gap-3 py-5">
             <Link
               className="no-underline text-[#000000] flex text-base bg-white py-2 px-2 drop-shadow-md"
-              to="/"
+              to="/" 
             >
               Home
             </Link>

@@ -5,11 +5,11 @@ import AdBanner from "../../components/pages/Home/AdBanner";
 import Recommendation from "../../components/pages/Home/Recommendation";
 import Discover from "../../components/pages/Home/Discover";
 
-function HomePage() {
+function HomePage(props) {
   // Carousel with multiple featured titles
   return (
     <>
-      <Carousel />
+      <Carousel userStatus={props.userStatus} auth={props.auth}/>
       <Featured />
       <AdBanner />
       <Recommendation />
