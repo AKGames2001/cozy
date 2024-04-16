@@ -40,22 +40,18 @@ npm install
 cd ../backend
 npm install
 ```
-   
-4. Set up your environment variables:
-- Create a `.env` file in the `backend` directory.
-- Define environment variables such as database connection URI, JWT secret, and any other necessary configurations.
-5. Start the backend server:
+4. Start the backend server:
 ```
 npm start
 ```
 
-6. Start the frontend development server:
+5. Start the frontend development server:
 ```
 cd ../frontend
 npm start
 ```
 
-7. Open your web browser and navigate to `http://localhost:3000` to view the application.
+6. Open your web browser and navigate to `http://localhost:3000` to view the application.
 
 ## Contributing
 
