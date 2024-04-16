@@ -23,10 +23,8 @@ It provides a platform for showcasing and selling wines produced by the winery e
 
 - **Frontend**: React.js, HTML, CSS
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB (or any other database of your choice)
+- **Database**: (planing to expand to Postgres)
 - **Authentication**: JSON Web Tokens (JWT)
-- **Payment Processing**: Integration with a payment gateway (e.g., Stripe)
-- **Deployment**: Deployment options include platforms like Heroku, AWS, or Firebase.
 
 ## Getting Started
 
