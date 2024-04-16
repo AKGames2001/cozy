@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Breadcrumbs from "../../common/Breadcrumbs";
+import StarRating from "../../common/StarRating";
+
 import { IoMdCheckmark } from "react-icons/io";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa6";
@@ -87,8 +89,12 @@ function Detail(props) {
               />
             </div>
             <div className="flex flex-col w-3/6 p-5 gap-2">
-              <div>
+              <div className="flex justify-between">
                 <h3 className="text-3xl font-bold">{apiData.title}</h3>
+                <div>
+                  <StarRating rating={3}/>
+                  <p className="text-sm font-roboto mt-1">3.5/700 reviews</p>
+                </div>
               </div>
               <div>
                 <p className="text-xl">${apiData.price}</p>

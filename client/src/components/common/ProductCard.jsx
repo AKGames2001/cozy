@@ -1,9 +1,7 @@
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
-import { IoStarOutline } from "react-icons/io5";
-import { IoStarHalf } from "react-icons/io5";
-import { IoStar } from "react-icons/io5";
+import StarRating from "./StarRating";
 import { useNavigate } from "react-router-dom";
 
 function ProductCard(props) {
@@ -47,12 +45,8 @@ function ProductCard(props) {
           <p style={{ fontSize: "12px" }}>
             {props.data.description.substring(0, 80)}
           </p>
-          <div className="flex text-[#757575] text-lg">
-            <IoStar />
-            <IoStar />
-            <IoStar />
-            <IoStarHalf />
-            <IoStarOutline />
+          <div>
+            <StarRating rating={4}/>
           </div>
           <p>${props.data.price}</p>
         </div>

@@ -7,43 +7,20 @@ function Recommendation() {
   const [apiData, setApiData] = useState();
 
   function mapper(arr) {
-    return arr.map((innerArr) => {
-      console.log(innerArr);
-      return innerArr.map((ele) => {
-        return (
-          <ProductCard
-            data={{
-              id: ele.id,
-              image: ele.image,
-              title: ele.title,
-              description: ele.description,
-              price: ele.price,
-            }}
-          />
-        );
-      });
+    let b = arr.splice(0, 8);
+    return b.map((ele) => {
+      return (
+        <ProductCard
+          data={{
+            id: ele.id,
+            image: ele.image,
+            title: ele.title,
+            description: ele.description,
+            price: ele.price,
+          }}
+        />
+      );
     });
-  }
-
-  function splitData() {
-    let counter = 0;
-    let slicedData = [];
-    apiData.forEach(() => {
-      // Counter to seprate the data into Rows
-      if (counter % 4 === 0 && counter < 5) {
-        if (counter + 4 < apiData.length) {
-          slicedData.push(apiData.slice(counter, counter + 4));
-        } else if (counter !== 0) {
-          slicedData.push(apiData.slice(counter));
-        } else {
-          console.log("Data is Empty");
-        }
-        counter++;
-      } else {
-        counter++;
-      }
-    });
-    return mapper(slicedData);
   }
 
   function callingData() {
@@ -94,7 +71,7 @@ function Recommendation() {
         </div>
         <div className="w-[80%] mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 py-3 h-full gap-8">
-            {splitData()}
+            {mapper(apiData)}
           </div>
         </div>
       </div>
