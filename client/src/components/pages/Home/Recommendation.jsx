@@ -69,7 +69,7 @@ function Recommendation() {
           </button>
         </div>
         <div className="w-[80%] mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 py-3 h-full gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 py-3 h-full gap-4 md:gap-8">
             {mapper(apiData)}
           </div>
         </div>

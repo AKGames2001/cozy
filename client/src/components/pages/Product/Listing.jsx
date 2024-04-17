@@ -37,7 +37,7 @@ function Listing() {
     <></>
   ) : (
     <>
-      <div className="flex flex-col w-9/12">
+      <div className="flex flex-col w-full md:w-9/12">
         <div className="flex justify-start gap-4">
           <div className="flex items-center justify-between border-[1px] border-[#90133b] border-solid rounded px-2 py-2 mt-10 mb-2">
             <p>Australia</p>
@@ -48,7 +48,7 @@ function Listing() {
             <BiX className="text-[#90133b] text-2xl cursor-pointer" />
           </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 px-3 py-6 h-full gap-8 border-[1px] border-gray-200">
+        <div className="grid grid-cols-2 lg:grid-cols-3 px-3 py-6 h-full gap-4 md:gap-8 border-[1px] border-gray-200">
           {mapper(apiData)}
         </div>
       </div>

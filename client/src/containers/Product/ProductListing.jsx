@@ -8,10 +8,10 @@ function ProductListing(props) {
   return (
     <>
       <div className="flex flex-col w-full items-center">
-        <div className="flex w-4/5 justify-center border-t-[1px] border-black border-solid">
+        <div className="hidden md:flex w-4/5 justify-center border-t-[1px] border-black border-solid">
           <Breadcrumbs />
         </div>
-        <div className="flex w-4/5">
+        <div className="flex flex-col md:flex-row w-4/5">
           <Sidebar />
           <Listing />
         </div>
