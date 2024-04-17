@@ -5,7 +5,7 @@ import StarRating from "../../common/StarRating";
 import { IoMdCheckmark } from "react-icons/io";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaPlus } from "react-icons/fa6";
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Detail(props) {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +15,7 @@ function Detail(props) {
 
   useEffect(() => {
     console.log(location.state.id);
-    fetch("http://192.168.15.223:5000/api/product", {
+    fetch(process.env.REACT_APP_BASE_URL + "api/product", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function Detail(props) {
   function handleAddToCart() {
     console.log(props.userData);
     if (props.userStatus) {
-      fetch("http://192.168.15.223:5000/api/cart/add", {
+      fetch(process.env.REACT_APP_BASE_URL + "api/cart/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,7 +55,7 @@ function Detail(props) {
 
   function handleAddToWishlist() {
     if (props.userStatus) {
-      fetch("http://192.168.15.223:5000/api/cart/wishlist/add", {
+      fetch(process.env.REACT_APP_BASE_URL + "api/cart/wishlist/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

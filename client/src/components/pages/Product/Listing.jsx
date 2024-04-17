@@ -23,7 +23,7 @@ function Listing() {
   }
 
   useEffect(() => {
-    fetch("http://192.168.15.223:5000/api/winery")
+    fetch(process.env.REACT_APP_BASE_URL + "api/winery")
       .then((response) => {
         return response.json();
       })

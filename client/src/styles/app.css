@@ -57,3 +57,11 @@ body {
 .image-hover:hover .item-hover {
   bottom: 0px;
 }
+
+.text-hover {
+  display: none;
+}
+
+.layer-hover:hover .text-hover {
+  display: block;
+}

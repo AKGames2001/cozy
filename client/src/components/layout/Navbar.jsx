@@ -18,13 +18,13 @@ function Navbar(props) {
   return (
     <>
       <div className="flex w-full justify-between items-center h-6 p-4 bg-[#8ba462] text-white font-roboto">
-        <div className="flex gap-6">
-          <div className="flex gap-1 items-center cursor-pointer"><MdOutlineLocalPhone />Phone Number</div>
-          <div className="flex gap-1 items-center cursor-pointer"><MdOutlineEmail />Email ID</div>
+        <div className="flex gap-1 md:gap-6">
+          <div className="flex gap-1 text-xs md:text-base items-center cursor-pointer"><MdOutlineLocalPhone />Phone Number</div>
+          <div className="flex gap-1 text-xs md:text-base items-center cursor-pointer"><MdOutlineEmail />Email ID</div>
         </div>
         <div className="flex gap-6">
-          <div className="flex gap-1 cursor-pointer">Deals from Down Under</div>
-          <div className="flex gap-1 cursor-pointer">Welcome Offer</div>
+          <div className="flex gap-1 text-xs md:text-base cursor-pointer">Deals from Down Under</div>
+          <div className="flex gap-1 text-xs md:text-base cursor-pointer">Welcome Offer</div>
         </div>
       </div>
       <div className="flex flex-col items-center w-full bg-transparent py-[10px] gap-3">

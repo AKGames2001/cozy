@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Breadcrumbs() {
   return (
     <>
-      <ol className="flex text-sm my-4 w-4/5">
+      <ol className="flex text-sm my-4 w-full">
         <li>
           <Link to="" className="text-[#6cb8f9]">
             Home

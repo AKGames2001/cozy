@@ -9,7 +9,7 @@ function HomePage(props) {
   // Carousel with multiple featured titles
   return (
     <>
-      <Carousel userStatus={props.userStatus} auth={props.auth}/>
+      <Carousel userStatus={props.userStatus} auth={props.auth} autoSlides={true} autoSlideInterval={2000}/>
       <Featured />
       <AdBanner />
       <Recommendation />

@@ -10,7 +10,7 @@ function Register(props) {
 
   function submitHandler(e) {
     e.preventDefault();
-    fetch("http://192.168.15.223:5000/api/auth/register", {
+    fetch(process.env.REACT_APP_BASE_URL + "api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

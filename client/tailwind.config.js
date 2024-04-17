@@ -11,6 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         'adBanner': "url('./assets/images/ad-banner.jpg')",
+        'carousel': "url('./assets/images/featured-1.jpg')",
         'discover-1': "url('./assets/images/discover-1.jpg')",
         'discover-2': "url('./assets/images/discover-2.jpg')",
         'discover-3': "url('./assets/images/discover-3.jpg')",

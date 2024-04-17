@@ -7,8 +7,7 @@ function Recommendation() {
   const [apiData, setApiData] = useState();
 
   function mapper(arr) {
-    let b = arr.splice(0, 8);
-    return b.map((ele) => {
+    return arr.map((ele) => {
       return (
         <ProductCard
           data={{
@@ -24,7 +23,7 @@ function Recommendation() {
   }
 
   function callingData() {
-    fetch("http://192.168.15.223:5000/api/winery")
+    fetch(process.env.REACT_APP_BASE_URL + "api/winery")
       .then((response) => {
         return response.json();
       })
@@ -49,21 +48,21 @@ function Recommendation() {
     <>
       <div className="w-full flex flex-col items-center py-8 gap-6">
         <h3 className="text-2xl">Recommendation for you</h3>
-        <div className="flex text-[#8e8e8e]">
+        <div className="flex w-full justify-evenly md:justify-center text-[#8e8e8e]">
           <button
-            className="text-lg font-medium cursor-pointer font-roboto px-10 py-3 active"
+            className="text-base md:text-lg font-medium cursor-pointer font-roboto md:px-10 md:py-3 active"
             onClick={clickHandler}
           >
             ALL WINE
           </button>
           <button
-            className="text-lg font-medium cursor-pointer font-roboto px-10 py-3"
+            className="text-base md:text-lg font-medium cursor-pointer font-roboto md:px-10 md:py-3"
             onClick={clickHandler}
           >
             FINE WINE
           </button>
           <button
-            className="text-lg font-medium cursor-pointer font-roboto px-10 py-3"
+            className="text-base md:text-lg font-medium cursor-pointer font-roboto md:px-10 md:py-3"
             onClick={clickHandler}
           >
             MIXED CASE
